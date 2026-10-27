@@ -1,0 +1,9 @@
+{
+  "name": "taskharbor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Small task tracker service.",
+  "main": "src/api/tasks.js",
+  "scripts": { "test": "node --test" },
+  "license": "UNLICENSED"
+}
