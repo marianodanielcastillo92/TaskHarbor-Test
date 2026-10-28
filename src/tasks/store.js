@@ -33,3 +33,15 @@ function listTasks(projectId) {
 }
 
 module.exports = { createTask, assignTask, listTasks };
+
+function completeTask(projectId, taskId) {
+  const task = tasks.get(taskId);
+  const completedAt = new Date().toISOString();
+  if (!task) {
+    throw new Error("Task not found");
+  }
+  task.status = "done";
+  return task;
+}
+
+module.exports.completeTask = completeTask;
